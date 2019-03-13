@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Phone Number</title>
+</head>
+<body>
+<script>
+    function validatePhoneNumber() {
+        let str = prompt('Enter a phone number!!!');
+        let patt = /^\([0-9]{2}\)-\([0]+[0-9]{9}\)$/;
+        if (patt.test(str)){
+            alert('You enter Phone Number is Right!!!');
+        }else {
+            alert('You enter Phone Number is Wrong!!!');
+        }
+    }
+    validatePhoneNumber();
+</script>
+</body>
+</html>
